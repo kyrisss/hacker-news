@@ -1,0 +1,69 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:react-hooks/recommended"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-namespace": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "arrow-body-style": [2, "as-needed"],
+    "no-use-before-define": 0,
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "import/no-default-export": 2,
+    "import/no-extraneous-dependencies": 0,
+    "import/namespace": "off",
+    "max-len": [2, 180],
+    "quotes": [2, "double"],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@mock", "./mock"],
+          ["@tools", "./src/tools"],
+          ["@common", "./src/common"],
+          ["@components", "./src/components"],
+          ["@hooks", "./src/hooks"],
+          ["@redux", "./src/redux"],
+          ["@routes", "./src/routes"],
+          ["@store", "./src/store"],
+          ["@views", "./src/views"],
+          ["@constants", "./src/constants"],
+          ["@models", "./src/models"],
+          ["@styles", "./styles"]
+        ],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

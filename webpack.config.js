@@ -49,7 +49,8 @@ module.exports = (env) => {
       extensions: [".tsx", ".ts", ".mjs", ".js"],
       alias: {
         "@components": path.resolve(__dirname, "src/components/"),
-        "@constants": path.resolve(__dirname, "src/constants"),
+        "@constants": path.resolve(__dirname, "src/constants/"),
+        "@models": path.resolve(__dirname, "src/models/"),
         "@hooks": path.resolve(__dirname, "src/hooks/"),
         "@redux": path.resolve(__dirname, "src/redux/"),
         "@routes": path.resolve(__dirname, "src/routes/"),

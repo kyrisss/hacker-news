@@ -27,6 +27,7 @@
       "@routes/*": ["src/routes/*"],
       "@views/*": ["src/views/*"],
       "@constants/*": ["src/constants/*"],
+      "@models/*": ["src/models/*"],
       "@styles/*": ["styles/*"]
     }
   }

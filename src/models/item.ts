@@ -23,3 +23,7 @@ export interface Item {
   parts?: number[];
   descendants?: number;
 }
+
+export interface TransormItem extends Omit<Item, "time"> {
+  time?: string;
+}

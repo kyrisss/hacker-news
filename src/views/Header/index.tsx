@@ -11,13 +11,13 @@ export const Header = () => (
     </Link>
     <div className="nav">
       <NavLink to={LINK_TO_TOP_STORIES} className={({ isActive }) => cn("nav__link", { nav__link_underline: isActive })}>
-        Top
+        Top stories
       </NavLink>
       <NavLink to={LINK_TO_NEW_STORIES} className={({ isActive }) => cn("nav__link", { nav__link_underline: isActive })}>
-        Latest
+        Latest stories
       </NavLink>
       <NavLink to={LINK_TO_BEST_STORIES} className={({ isActive }) => cn("nav__link", { nav__link_underline: isActive })}>
-        Best
+        Best stories
       </NavLink>
     </div>
     <div className="login">

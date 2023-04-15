@@ -1,0 +1,11 @@
+.navBack {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 20px;
+
+  &:hover {
+    color: $terra;
+  }
+}

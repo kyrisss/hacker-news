@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -48,6 +49,7 @@ module.exports = (env) => {
       extensions: [".tsx", ".ts", ".mjs", ".js"],
       alias: {
         "@components": path.resolve(__dirname, "src/components/"),
+        "@constants": path.resolve(__dirname, "src/constants"),
         "@hooks": path.resolve(__dirname, "src/hooks/"),
         "@redux": path.resolve(__dirname, "src/redux/"),
         "@routes": path.resolve(__dirname, "src/routes/"),

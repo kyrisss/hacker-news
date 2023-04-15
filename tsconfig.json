@@ -19,20 +19,15 @@
     "resolveJsonModule": true,
     "strict": true,
     "downlevelIteration": true,
-    "baseUrl": "./"
-    // "paths": {
-    //   "@mock/*": ["mock/*"],
-    //   "@tools/*": ["src/tools/*"],
-    //   "@common/*": ["src/common/*"],
-    //   "@components/*": ["src/components/*"],
-    //   "@hooks/*": ["src/hooks/*"],
-    //   "@redux/*": ["src/redux/*"],
-    //   "@routes/*": ["src/routes/*"],
-    //   "@models/*": ["src/models/*"],
-    //   "@store/*": ["src/store/*"],
-    //   "@views/*": ["src/views/*"],
-    //   "@constants/*": ["src/constants/*"],
-    //   "@styles/*": ["styles/*"]
-    // }
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@redux/*": ["src/redux/*"],
+      "@routes/*": ["src/routes/*"],
+      "@views/*": ["src/views/*"],
+      "@constants/*": ["src/constants/*"],
+      "@styles/*": ["styles/*"]
+    }
   }
 }

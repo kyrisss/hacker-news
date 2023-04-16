@@ -6,6 +6,12 @@
 @import "views/itemPage";
 
 @import "components/item.scss";
+@import "components/refetch.scss";
+@import "components/comment.scss";
+@import "components/comments.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "react-loading-skeleton/dist/skeleton.css";
 
 * {
   box-sizing: border-box;
@@ -18,6 +24,7 @@ html,
 body {
   height: auto;
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 .wrapper {

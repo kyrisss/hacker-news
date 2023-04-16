@@ -2,18 +2,4 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  .refetch {
-    display: flex;
-    justify-content: end;
-
-    &__icon {
-      cursor: pointer;
-      color: $terra;
-
-      &:hover {
-        background-color: darken($color: $white, $amount: 10);
-      }
-    }
-  }
 }

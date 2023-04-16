@@ -1,11 +1,51 @@
-.navBack {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
-  font-size: 20px;
+.itemPage {
+  .navBack {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
 
-  &:hover {
-    color: $terra;
+    &:hover {
+      color: $terra;
+    }
+  }
+
+  .article {
+    &__head {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &__author {
+        font-size: larger;
+      }
+
+      &__date {
+        color: $gray;
+      }
+    }
+
+    .title {
+      &__name {
+      }
+
+      &__url {
+        color: $gray;
+
+        &:hover {
+          color: $terra;
+        }
+      }
+    }
   }
 }

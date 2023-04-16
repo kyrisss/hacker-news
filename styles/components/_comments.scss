@@ -1,0 +1,18 @@
+.comments {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__kids {
+    // margin-top: 20px;
+    margin-left: 30px;
+  }
+}

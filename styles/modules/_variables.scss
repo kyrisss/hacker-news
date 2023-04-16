@@ -1,3 +1,11 @@
 $terra: #e17055;
 $black: #000000;
 $white: #ffffff;
+$gray: lighten(
+  $color: $black,
+  $amount: 60,
+);
+$lightGray: lighten(
+  $color: $black,
+  $amount: 90,
+);

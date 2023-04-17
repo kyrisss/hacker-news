@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const TerserPlugin = require("terser-webpack-plugin");
 
 const { merge } = require("webpack-merge");
 const config = require("./webpack.config.js");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const { IgnorePlugin } = require("webpack");
 
 module.exports = (env) =>
   merge(config(env), {
@@ -39,5 +38,6 @@ module.exports = (env) =>
         minRatio: 0.8,
       }),
       new MiniCssExtractPlugin(),
+      new BundleAnalyzerPlugin(), // Uncomment to check bundle size
     ],
   });

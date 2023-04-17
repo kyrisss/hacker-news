@@ -1,0 +1,37 @@
+.itemPage {
+  .navBack {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
+
+    &:hover {
+      color: $terra;
+    }
+  }
+
+  .article {
+    &__head {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    .title {
+      &__name {
+      }
+
+      &__url {
+        color: $gray;
+
+        &:hover {
+          color: $terra;
+        }
+      }
+    }
+  }
+}

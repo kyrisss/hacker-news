@@ -1,0 +1,24 @@
+.author {
+  display: flex;
+  gap: 15px;
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &_name {
+      font-size: larger;
+    }
+
+    &_date {
+      color: $gray;
+    }
+  }
+}

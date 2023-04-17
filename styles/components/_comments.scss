@@ -1,0 +1,20 @@
+.comments {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__refetch {
+    margin: 20px 0;
+  }
+
+  &__kids {
+    margin-left: 30px;
+  }
+}

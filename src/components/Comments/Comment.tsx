@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useGetItemQuery } from "@redux/baseQuery";
 import Skeleton from "react-loading-skeleton";
 import parse from "html-react-parser";
+import { Author } from "@components/Author";
 
 interface CommentProps {
   id: number;
@@ -37,18 +38,8 @@ export const Comment: React.FC<CommentProps> = ({ id }) => {
   return (
     <>
       <div onClick={expandHandler} className="comment">
-        <div className="comment__head head">
-          {isLoading ? (
-            <Skeleton width={200} count={2} />
-          ) : (
-            <>
-              <div className="head__author">{`by ${comment?.by || ""}`}</div>
-              <div className="head__date">{comment?.time || ""}</div>
-            </>
-          )}
-        </div>
+        <Author className="comment__head" isLoading={isLoading} by={comment?.by || ""} date={comment?.time || ""} />
         <div className="comment__text">{isLoading ? <Skeleton height={100} /> : parse(comment?.text || "")}</div>
-
         <div className="comment__replies">{isLoading ? <Skeleton width={200} /> : `${kids?.length || 0} replies`}</div>
       </div>
       {isExpand && kids && (

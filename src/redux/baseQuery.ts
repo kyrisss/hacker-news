@@ -1,5 +1,5 @@
 import { StoryTypes } from "@constants/stories";
-import { Item, TransormItem } from "@models/item";
+import { Item, TransformItem } from "@models/item";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const baseQuery = fetchBaseQuery({
@@ -11,15 +11,12 @@ export const hackerApi = createApi({
   baseQuery,
   endpoints: (build) => ({
     getStories: build.query<number[], StoryTypes>({
-      query: (storyType) => {
-        console.log({ storyType });
-        return {
-          url: `/${storyType}.json?print=pretty`,
-        };
-      },
+      query: (storyType) => ({
+        url: `/${storyType}.json?print=pretty`,
+      }),
       transformResponse: (data: number[]) => data.slice(0, 100).sort((a, b) => b - a),
     }),
-    getItem: build.query<TransormItem, number>({
+    getItem: build.query<TransformItem, number>({
       query: (id) => ({
         url: `item/${id}.json?print=pretty`,
       }),
@@ -33,3 +30,4 @@ export const hackerApi = createApi({
 
 export const { useGetStoriesQuery } = hackerApi;
 export const { useGetItemQuery } = hackerApi;
+export const { useLazyGetItemQuery } = hackerApi;

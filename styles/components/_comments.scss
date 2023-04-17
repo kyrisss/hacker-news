@@ -2,7 +2,6 @@
   &__title {
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 20px;
   }
 
   &__items {
@@ -11,8 +10,11 @@
     gap: 20px;
   }
 
+  &__refetch {
+    margin: 20px 0;
+  }
+
   &__kids {
-    // margin-top: 20px;
     margin-left: 30px;
   }
 }

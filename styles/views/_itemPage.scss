@@ -21,20 +21,6 @@
       margin-bottom: 30px;
     }
 
-    .head {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-
-      &__author {
-        font-size: larger;
-      }
-
-      &__date {
-        color: $gray;
-      }
-    }
-
     .title {
       &__name {
       }

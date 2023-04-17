@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import React from "react";
-import { ROUTES } from "./config";
+import { ROUTES } from "@routes/config";
 import { MainLayout } from "@components/MainLayout";
 import { Page404 } from "@views/Error/Page404";
 import { MainPage } from "@views/MainPage";

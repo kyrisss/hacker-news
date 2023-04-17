@@ -7,14 +7,13 @@
     "start": "webpack serve --open --compress --env goal=local src --hot --config ./webpack.dev.js",
     "build:dev": "webpack --env goal=development --config ./webpack.dev.js",
     "build:prod": "webpack --env goal=production --config ./webpack.prod.js",
-    "eslint": "eslint -c .eslintrc './**/*.{tsx,ts}'",
+    "eslint": "eslint -c .eslintrc '.src/**/*.{tsx,ts}'",
     "eslint:fix": "eslint -c .eslintrc --fix './**/*.{tsx,ts}'",
     "prettier": "prettier --check './**/*.{tsx,ts}'",
     "prettier:fix": "prettier --write './**/*.{tsx,ts}'"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "html-react-parser": "^3.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",

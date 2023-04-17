@@ -24,6 +24,6 @@ export interface Item {
   descendants?: number;
 }
 
-export interface TransormItem extends Omit<Item, "time"> {
+export interface TransformItem extends Omit<Item, "time"> {
   time?: string;
 }

@@ -24,7 +24,7 @@
       "@components/*": ["src/components/*"],
       "@hooks/*": ["src/hooks/*"],
       "@redux/*": ["src/redux/*"],
-      "@routes/*": ["src/Routes/*"],
+      "@routes/*": ["src/routes/*"],
       "@views/*": ["src/views/*"],
       "@constants/*": ["src/constants/*"],
       "@utils/*": ["src/utils/*"],

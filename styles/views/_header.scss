@@ -6,6 +6,11 @@
   .logo {
     color: $terra;
     font-size: xx-large;
+
+    @media (max-width: 768px) {
+      font-size: larger;
+      width: 80px;
+    }
   }
 }
 
@@ -16,10 +21,19 @@
   align-items: center;
   gap: 20px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 5px;
+  }
+
   &__link {
     padding: 5px 10px;
     color: $terra;
     font-size: large;
+
+    @media (max-width: 768px) {
+      font-size: medium;
+    }
 
     &:hover {
       color: darken($color: $terra, $amount: 10);

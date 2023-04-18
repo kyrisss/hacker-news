@@ -18,7 +18,7 @@ export const Item: React.FC<ItemProps> = ({ id }) => {
       <Link to={linkToItem} className="item">
         <div className="item__head head">
           {isLoading ? (
-            <Skeleton width={800} height={20} count={2} />
+            <Skeleton width={300} height={20} count={2} />
           ) : (
             <>
               <div className="head__title">{data?.title || ""}</div>

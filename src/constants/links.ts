@@ -1,4 +1,4 @@
-import { ROUTES } from "@routes/config";
+import { ROUTES } from "src/Routes/config";
 import { generatePath } from "react-router-dom";
 import { StoryTypes } from "./stories";
 

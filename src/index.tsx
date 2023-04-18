@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "@styles/index.scss";
-import { AppRoutes } from "src/routes/AppRoutes";
+import { AppRoutes } from "@routes/AppRoutes";
 import { store } from "@redux/store";
 import { Provider } from "react-redux";
 

@@ -1,5 +1,5 @@
 import { useGetItemQuery } from "@redux/baseQuery";
-import { ROUTES } from "src/Routes/config";
+import { ROUTES } from "src/routes/config";
 import React from "react";
 import Skeleton from "react-loading-skeleton";
 import { Link, generatePath } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { useGetItemQuery } from "@redux/baseQuery";
-import { ROUTES } from "@routes/config";
+import { ROUTES } from "src/routes/config";
 import React from "react";
 import Skeleton from "react-loading-skeleton";
 import { Link, generatePath } from "react-router-dom";
@@ -11,7 +11,7 @@ interface ItemProps {
 export const Item: React.FC<ItemProps> = ({ id }) => {
   const { data, isLoading } = useGetItemQuery(id, { skip: !id });
 
-  const linkToItem = generatePath(ROUTES.ITEM, { id });
+  const linkToItem = generatePath(ROUTES.ITEM, { id: String(id) });
 
   return (
     <>
